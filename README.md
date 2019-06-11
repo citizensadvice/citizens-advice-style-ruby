@@ -30,6 +30,8 @@ inherit_gem:
     - default.yml
 ```
 
+If you need rubocop-rails styling configuration then also include `default-rails.yml`.
+
 Now run
 
     $ bundle exec rubocop

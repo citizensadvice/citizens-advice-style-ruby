@@ -1,0 +1,97 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+  # Output settings
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+  Exclude:
+    - 'bin/**/*' # don't lint generated bin/scripts
+
+# Don't enforce comments classes
+Documentation:
+  Enabled: false
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/MixinGrouping:
+  Exclude:
+    - 'spec/**/*'
+
+Style/FormatStringToken:
+  EnforcedStyle: template # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
+
+# More flexible array alignment
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
+
+# More flexible hash alignment
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  Exclude:
+    - 'spec/**/*'
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+# Disable class length check for tests
+Metrics/ClassLength:
+  Max: 190
+  Exclude:
+    - 'spec/**/*'
+
+# Disable method length check for tests and migrations
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+    - 'spec/**/*'
+
+# 140 character width
+Metrics/LineLength:
+  Max: 140
+  IgnoredPatterns:
+    - 'rubocop:disable'
+  Exclude:
+    - 'spec/**/*'
+
+# Disable multi-line chaining check
+MultilineBlockChain:
+  Enabled: false
+
+# Allow method names starting with get or set
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - '_'
+    - 'e'
+    - 'i'
+    - 'id'
+    - 'to'
+
+# Prefer double quotes
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
