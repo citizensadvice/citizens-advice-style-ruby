@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'citizens-advice/style/version'
+require "citizens-advice/style/version"
 
 module CitizensAdvice
   module Style

@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'citizens-advice-style'
+  gem "citizens-advice-style"
 end
 ```
 
