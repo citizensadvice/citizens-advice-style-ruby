@@ -1,5 +1,9 @@
 require: rubocop-rails
 
+inherit_mode:
+  merge:
+    - Exclude
+
 Rails:
   Enabled: true
 
