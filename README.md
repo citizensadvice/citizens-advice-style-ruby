@@ -39,7 +39,7 @@ inherit_gem:
     - default.yml
 ```
 
-If you need rubocop-rails styling configuration then also include `default-rails.yml`.
+If you need rubocop-rails styling configuration then also include `default-rails.yml` after `default.yml`.
 
 Now run
 
@@ -49,4 +49,13 @@ Override any global styles in your local `.rubocop.yml` file.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/citizens-advice-style.
+Bug reports and pull requests are welcome on GitHub at https://github.com/citizensadvice/citizens-advice-style-ruby.
+
+## Releasing
+
+1. Make changes and test locally
+2. Update `lib/citizens-advice/style/version.rb` with appropriate new version number
+3. Build gem `rake build`
+4. Create a tag `git tag -a v0.1.0`
+5. Push changes to github `git push --tags`
+6. Push gem to rubygems `gem push citizens-advice-style-0.1.0.gem`

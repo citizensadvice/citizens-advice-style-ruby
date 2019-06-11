@@ -59,7 +59,7 @@ Metrics/ClassLength:
   Exclude:
     - 'spec/**/*'
 
-# Disable method length check for tests and migrations
+# Disable method length check for tests
 Metrics/MethodLength:
   Max: 15
   Exclude:
