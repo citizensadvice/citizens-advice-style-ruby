@@ -7,7 +7,7 @@ inherit_mode:
 Rails:
   Enabled: true
 
-# default overrides
+# default rule overrides
 
 AllCops:
   Exclude:
@@ -17,14 +17,15 @@ AllCops:
 
 Metrics/AbcSize:
   Exclude:
+    - 'db/migrate/*'
     - 'features/**/*'
     - 'spec/**/*'
-    - 'db/migrate/*'
 
 Metrics/BlockLength:
   Exclude:
     - 'config/**/*'
     - 'db/migrate/*'
+    - 'features/factories/*'
     - 'lib/tasks/**/*'
     - '**/*.json.jbuilder'
 
@@ -35,13 +36,13 @@ Metrics/ClassLength:
 
 Metrics/MethodLength:
   Exclude:
-    - 'features/**/*'
     - 'db/migrate/*'
+    - 'features/**/*'
 
 Metrics/LineLength:
   Exclude:
-    - 'features/**/*'
     - 'db/migrate/*'
+    - 'features/**/*'
 
 Lint/ParenthesesAsGroupedExpression:
   Exclude:
@@ -57,8 +58,8 @@ Rails/SkipsModelValidations:
 Rails/HasManyOrHasOneDependent:
   Enabled: false
 
-# The BulkChangeTable cop can improve some db platform migration performance but it
-# also introduces some other issues as it does not support all features that add_column, remove_column
-# have. Disable it and write standard, consistent migrations.
+# Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
+# but it also introduces some other issues as it does not support all features that add_column,
+# remove_column have. Disable it and write standard, consistent migrations.
 Rails/BulkChangeTable:
   Enabled: false
