@@ -12,6 +12,15 @@ group :test, :development do
 end
 ```
 
+If you need rubocop-rails styling configuration then also add rubocop-rails gem (TODO: Can we include this in citizens-advice-style?).
+
+```ruby
+group :test, :development do
+  gem "citizens-advice-style"
+  gem "rubocop-rails", require: false
+end
+```
+
 And then execute:
 
     $ bundle
