@@ -9,7 +9,7 @@ AllCops:
     - 'bin/**/*' # don't lint generated bin/scripts
 
 # Don't enforce comments classes
-Documentation:
+Style/Documentation:
   Enabled: false
 
 Layout/EmptyLineAfterMagicComment:
@@ -74,7 +74,7 @@ Metrics/LineLength:
     - 'spec/**/*'
 
 # Disable multi-line chaining check
-MultilineBlockChain:
+Style/MultilineBlockChain:
   Enabled: false
 
 # Allow method names starting with get or set
