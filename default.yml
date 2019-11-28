@@ -32,11 +32,11 @@ Style/FormatStringToken:
   EnforcedStyle: template # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
 
 # More flexible array alignment
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
 # More flexible hash alignment
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
@@ -84,7 +84,7 @@ Naming/AccessorMethodName:
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   AllowedNames:
     - '_'
     - 'e'
