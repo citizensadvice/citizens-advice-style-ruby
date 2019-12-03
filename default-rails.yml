@@ -50,9 +50,6 @@ Lint/ParenthesesAsGroupedExpression:
 
 # rubocop-rails rules
 
-Rails/FilePath:
-  EnforcedStyle: 'arguments'
-
 Rails/SkipsModelValidations:
   Exclude:
     - 'features/**/*'
