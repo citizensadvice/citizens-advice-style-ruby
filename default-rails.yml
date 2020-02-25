@@ -39,7 +39,7 @@ Metrics/MethodLength:
     - 'db/migrate/*'
     - 'features/**/*'
 
-Metrics/LineLength:
+Layout/LineLength:
   Exclude:
     - 'db/migrate/*'
     - 'features/**/*'
