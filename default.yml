@@ -15,9 +15,6 @@ Style/Documentation:
 Layout/EmptyLineAfterMagicComment:
   Enabled: false
 
-Style/BracesAroundHashParameters:
-  EnforcedStyle: context_dependent
-
 Style/DoubleNegation:
   Enabled: false
 
@@ -95,3 +92,12 @@ Naming/MethodParameterName:
 # Prefer double quotes
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
