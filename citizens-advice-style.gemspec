@@ -36,5 +36,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 0.70"
+  # A working configuration can suddenly become a problem if rubocop deprecates or changes
+  # cop names. Allowing just patch updates should prevent this happening.
+  # When rubocop is upgraded here, this gem should get a minor version update as well.
+  spec.add_dependency "rubocop", "~> 0.80.0"
 end
