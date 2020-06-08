@@ -8,6 +8,10 @@ AllCops:
   Exclude:
     - 'bin/**/*' # don't lint generated bin/scripts
 
+  # Since Rubocop v0.83 - New cops introduced can be auto-enabled / disabled
+  # Lets remove the warnings for these
+  NewCops: enable
+
 # Don't enforce comments classes
 Style/Documentation:
   Enabled: false
@@ -92,12 +96,3 @@ Naming/MethodParameterName:
 # Prefer double quotes
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
