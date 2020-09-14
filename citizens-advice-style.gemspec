@@ -40,4 +40,8 @@ Gem::Specification.new do |spec|
   # cop names. Allowing just patch updates should prevent this happening.
   # When rubocop is upgraded here, this gem should get a minor version update as well.
   spec.add_dependency "rubocop", "~> 0.85.1"
+  
+  # In earlier versions, rubocop could find the DidYouMean module through ruby's default gems.
+  # This seems to have changed so that it must now be added to the Gemfile.
+  spec.add_dependency "did_you_mean", "~> 1.4.0"
 end
