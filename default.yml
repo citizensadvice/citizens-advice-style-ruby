@@ -12,7 +12,7 @@ AllCops:
   # Lets remove the warnings for these
   NewCops: enable
 
-# Don't enforce comments classes
+# We don't enforce documentation comments on Modules/Classes
 Style/Documentation:
   Enabled: false
 

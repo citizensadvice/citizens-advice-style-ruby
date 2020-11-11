@@ -7,8 +7,6 @@ inherit_mode:
 Rails:
   Enabled: true
 
-# default rule overrides
-
 AllCops:
   Exclude:
     - 'db/schema.rb' # this is a generated file, we don't want to be manually corrected it.
@@ -47,8 +45,6 @@ Layout/LineLength:
 Lint/ParenthesesAsGroupedExpression:
   Exclude:
     - 'features/step_definitions/**/*'
-
-# rubocop-rails rules
 
 Rails/SkipsModelValidations:
   Exclude:
