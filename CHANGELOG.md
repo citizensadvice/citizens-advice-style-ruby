@@ -1,6 +1,6 @@
 # Citizens Advice Style Ruby
 
-## <sub>v1.0</sub>
+## <sub>v1.0.0</sub>
 
 #### _Nov. xx 2020_
 

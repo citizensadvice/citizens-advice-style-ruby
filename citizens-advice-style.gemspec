@@ -6,8 +6,8 @@ require "citizens-advice/style/version"
 Gem::Specification.new do |spec|
   spec.name          = "citizens-advice-style"
   spec.version       = CitizensAdvice::Style::VERSION
-  spec.authors       = ["Citizens Advice"]
-  spec.email         = ["robert.murray@citizensadvice.org.uk"]
+  spec.author        = "Citizens Advice"
+  spec.email         = %w[robert.murray@citizensadvice.org.uk luke.hill@citizensadvice.org.uk]
 
   spec.summary       = "Citizens Advice shared rubocop configuration"
   spec.homepage      = "https://github.com/citizensadvice/citizens-advice-style-ruby"
@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 

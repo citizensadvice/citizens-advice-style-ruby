@@ -55,7 +55,5 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/citize
 
 1. Make changes and test locally
 2. Update `lib/citizens-advice/style/version.rb` with appropriate new version number
-3. Build gem `rake build`
-4. Create a tag `git tag -a v0.1.0`
-5. Push changes to github `git push --tags`
-6. Push gem to rubygems `gem push citizens-advice-style-0.1.0.gem`
+3. Create release branch and push changes to github
+4. After review & merge, tag the version on Github so people can reference it as a new package
