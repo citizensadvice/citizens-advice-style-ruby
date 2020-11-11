@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
 
   # Output settings
   DisplayCopNames: true
@@ -50,27 +50,24 @@ Lint/AmbiguousBlockAssociation:
 Metrics/AbcSize:
   Max: 20
 
+# Tests are disabled from all Length checks by design
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
-# Disable class length check for tests
+# Tests are disabled from all Length checks by design
 Metrics/ClassLength:
-  Max: 190
   Exclude:
     - 'spec/**/*'
 
-# Disable method length check for tests
+# Tests are disabled from all Length checks by design
 Metrics/MethodLength:
-  Max: 15
   Exclude:
     - 'spec/**/*'
 
 # 140 character width
 Layout/LineLength:
   Max: 140
-  IgnoredPatterns:
-    - 'rubocop:disable'
   Exclude:
     - 'spec/**/*'
 
@@ -78,7 +75,7 @@ Layout/LineLength:
 Style/MultilineBlockChain:
   Enabled: false
 
-# Allow method names starting with get or set
+# Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:
   Enabled: false
 
