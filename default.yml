@@ -1,13 +1,12 @@
 AllCops:
+  # Target Ruby 2.7 only
   TargetRubyVersion: 2.7
-
-  # Output settings
+  # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
   DisplayStyleGuide: true
-
+  # Don't lint generated bin/scripts
   Exclude:
-    - 'bin/**/*' # don't lint generated bin/scripts
-
+    - 'bin/**/*'
   # Since Rubocop v0.83 - New cops introduced can be auto-enabled / disabled
   # Lets remove the warnings for these
   NewCops: enable
@@ -16,21 +15,16 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
-Layout/EmptyLineAfterMagicComment:
-  Enabled: false
-
 Style/DoubleNegation:
-  Enabled: false
-
-Style/SymbolArray:
   Enabled: false
 
 Style/MixinGrouping:
   Exclude:
     - 'spec/**/*'
 
+# Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
 Style/FormatStringToken:
-  EnforcedStyle: template # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
+  EnforcedStyle: template
 
 # More flexible array alignment
 Layout/FirstArrayElementIndentation:
@@ -90,6 +84,6 @@ Naming/MethodParameterName:
     - 'id'
     - 'to'
 
-# Prefer double quotes
+# Prefer Double quotes in Ruby across the codebase/s
 Style/StringLiterals:
   EnforcedStyle: double_quotes
