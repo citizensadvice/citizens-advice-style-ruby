@@ -15,9 +15,6 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
-Style/DoubleNegation:
-  Enabled: false
-
 Style/MixinGrouping:
   Exclude:
     - 'spec/**/*'
