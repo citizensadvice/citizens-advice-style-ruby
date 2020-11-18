@@ -11,18 +11,6 @@ AllCops:
   # Lets remove the warnings for these
   NewCops: enable
 
-# We don't enforce documentation comments on Modules/Classes
-Style/Documentation:
-  Enabled: false
-
-Style/MixinGrouping:
-  Exclude:
-    - 'spec/**/*'
-
-# Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
-Style/FormatStringToken:
-  EnforcedStyle: template
-
 # More flexible array alignment
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
@@ -30,6 +18,12 @@ Layout/FirstArrayElementIndentation:
 # More flexible hash alignment
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
+
+# 140 character width
+Layout/LineLength:
+  Max: 140
+  Exclude:
+    - 'spec/**/*'
 
 Layout/MultilineMethodCallIndentation:
   Exclude:
@@ -56,16 +50,6 @@ Metrics/MethodLength:
   Exclude:
     - 'spec/**/*'
 
-# 140 character width
-Layout/LineLength:
-  Max: 140
-  Exclude:
-    - 'spec/**/*'
-
-# Disable multi-line chaining check
-Style/MultilineBlockChain:
-  Enabled: false
-
 # Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:
   Enabled: false
@@ -80,6 +64,22 @@ Naming/MethodParameterName:
     - 'i'
     - 'id'
     - 'to'
+
+# We don't enforce documentation comments on Modules/Classes
+Style/Documentation:
+  Enabled: false
+
+# Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/MixinGrouping:
+  Exclude:
+    - 'spec/**/*'
+
+# Disable multi-line chaining check
+Style/MultilineBlockChain:
+  Enabled: false
 
 # Prefer Double quotes in Ruby across the codebase/s
 Style/StringLiterals:
