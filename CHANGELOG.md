@@ -20,3 +20,5 @@
   * `Metrics/ClassLength` doesn't have Max override (Tests are ignored by design)
   * `Layout/MultilineMethodCallIndentation` is no longer ignored (Was previously on specs)
   * `Style/MixinGrouping` is no longer ignored (Was previously on specs)
+  * `Metrics/AbcSize` is no longer ignored (As we don't ignore Cyclomatic Complexity)
+  
