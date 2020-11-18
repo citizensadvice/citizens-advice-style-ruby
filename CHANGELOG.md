@@ -18,3 +18,5 @@
   * `Layout/LineLength` now won't count rubocop in-line disables (Should try avoid this)
   * `Metrics/MethodLength` doesn't have Max override (Tests are ignored by design)
   * `Metrics/ClassLength` doesn't have Max override (Tests are ignored by design)
+  * `Layout/MultilineMethodCallIndentation` is no longer ignored (Was previously on specs)
+  * `Style/MixinGrouping` is no longer ignored (Was previously on specs)

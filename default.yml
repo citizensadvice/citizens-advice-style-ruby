@@ -25,10 +25,6 @@ Layout/LineLength:
   Exclude:
     - 'spec/**/*'
 
-Layout/MultilineMethodCallIndentation:
-  Exclude:
-    - 'spec/**/*'
-
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
@@ -72,10 +68,6 @@ Style/Documentation:
 # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
 Style/FormatStringToken:
   EnforcedStyle: template
-
-Style/MixinGrouping:
-  Exclude:
-    - 'spec/**/*'
 
 # Disable multi-line chaining check
 Style/MultilineBlockChain:
