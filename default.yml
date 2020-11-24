@@ -28,18 +28,8 @@ Layout/LineLength:
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
-# Tests are disabled from all Length checks by design
+# This cop will break all spec tests. It should be added to the rubocop-rspec defaults
 Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
-
-# Tests are disabled from all Length checks by design
-Metrics/ClassLength:
-  Exclude:
-    - 'spec/**/*'
-
-# Tests are disabled from all Length checks by design
-Metrics/MethodLength:
   Exclude:
     - 'spec/**/*'
 
