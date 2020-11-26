@@ -2,13 +2,14 @@
 
 ## <sub>v1.0.0</sub>
 
-#### _Nov. xx 2020_
+#### _Nov. 26 2020_
 
 **New features**:
 
 * Cut stable candidate of gem
 * Enforced rubocop v1.0 as a minimum as that is now stable
 * Began Semver
+* Added v2 cop plans for removal / updates
 
 **Breaking changes**:
 
