@@ -1,36 +1,15 @@
 AllCops:
-  TargetRubyVersion: 2.6
-
-  # Output settings
+  # Target Ruby 2.7 only
+  TargetRubyVersion: 2.7
+  # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
   DisplayStyleGuide: true
-
+  # Don't lint generated bin/scripts
   Exclude:
-    - 'bin/**/*' # don't lint generated bin/scripts
-
+    - 'bin/**/*'
   # Since Rubocop v0.83 - New cops introduced can be auto-enabled / disabled
   # Lets remove the warnings for these
   NewCops: enable
-
-# Don't enforce comments classes
-Style/Documentation:
-  Enabled: false
-
-Layout/EmptyLineAfterMagicComment:
-  Enabled: false
-
-Style/DoubleNegation:
-  Enabled: false
-
-Style/SymbolArray:
-  Enabled: false
-
-Style/MixinGrouping:
-  Exclude:
-    - 'spec/**/*'
-
-Style/FormatStringToken:
-  EnforcedStyle: template # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
 
 # More flexible array alignment
 Layout/FirstArrayElementIndentation:
@@ -40,51 +19,32 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
-Layout/MultilineMethodCallIndentation:
+# 140 character width
+# TOFIX: Remove Exclude in V2
+Layout/LineLength:
+  Max: 140
   Exclude:
     - 'spec/**/*'
 
+# TOFIX: Remove in V2
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
-Metrics/AbcSize:
-  Max: 20
-
+# Exclude BlockLength from spec tests as this will break all spec tests.
+# It should be added to the rubocop-rspec defaults ideally.
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
-# Disable class length check for tests
-Metrics/ClassLength:
-  Max: 190
-  Exclude:
-    - 'spec/**/*'
-
-# Disable method length check for tests
-Metrics/MethodLength:
-  Max: 15
-  Exclude:
-    - 'spec/**/*'
-
-# 140 character width
-Layout/LineLength:
-  Max: 140
-  IgnoredPatterns:
-    - 'rubocop:disable'
-  Exclude:
-    - 'spec/**/*'
-
-# Disable multi-line chaining check
-Style/MultilineBlockChain:
-  Enabled: false
-
-# Allow method names starting with get or set
+# Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:
   Enabled: false
 
+# TOFIX: Remove in V2
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
+# TOFIX: Document / Discuss in V2
 Naming/MethodParameterName:
   AllowedNames:
     - '_'
@@ -93,6 +53,19 @@ Naming/MethodParameterName:
     - 'id'
     - 'to'
 
-# Prefer double quotes
+# We don't enforce documentation comments on Modules/Classes
+Style/Documentation:
+  Enabled: false
+
+# Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+# Disable multi-line chaining check
+# TOFIX: Document / Discuss in V2
+Style/MultilineBlockChain:
+  Enabled: false
+
+# Prefer Double quotes in Ruby across the codebase/s
 Style/StringLiterals:
   EnforcedStyle: double_quotes

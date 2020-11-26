@@ -6,13 +6,13 @@ require "citizens-advice/style/version"
 Gem::Specification.new do |spec|
   spec.name          = "citizens-advice-style"
   spec.version       = CitizensAdvice::Style::VERSION
-  spec.authors       = ["Citizens Advice"]
-  spec.email         = ["robert.murray@citizensadvice.org.uk"]
+  spec.author        = "Citizens Advice"
+  spec.email         = %w[robert.murray@citizensadvice.org.uk luke.hill@citizensadvice.org.uk]
 
   spec.summary       = "Citizens Advice shared rubocop configuration"
   spec.homepage      = "https://github.com/citizensadvice/citizens-advice-style-ruby"
 
-  spec.required_ruby_version = "~> 2.6"
+  spec.required_ruby_version = ">= 2.7"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -32,12 +32,8 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # A working configuration can suddenly become a problem if rubocop deprecates or changes
-  # cop names. Allowing just patch updates should prevent this happening.
-  # When rubocop is upgraded here, this gem should get a minor version update as well.
-  spec.add_dependency "rubocop", "~> 0.91.0"
+  spec.add_dependency "rubocop", "~> 1.0.0"
 end
