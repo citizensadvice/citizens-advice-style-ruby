@@ -20,15 +20,18 @@ Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 # 140 character width
+# TOFIX: Remove Exclude in V2
 Layout/LineLength:
   Max: 140
   Exclude:
     - 'spec/**/*'
 
+# TOFIX: Remove in V2
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
-# This cop will break all spec tests. It should be added to the rubocop-rspec defaults
+# Exclude BlockLength from spec tests as this will break all spec tests.
+# It should be added to the rubocop-rspec defaults ideally.
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
@@ -37,9 +40,11 @@ Metrics/BlockLength:
 Naming/AccessorMethodName:
   Enabled: false
 
+# TOFIX: Remove in V2
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
+# TOFIX: Document / Discuss in V2
 Naming/MethodParameterName:
   AllowedNames:
     - '_'
@@ -57,6 +62,7 @@ Style/FormatStringToken:
   EnforcedStyle: template
 
 # Disable multi-line chaining check
+# TOFIX: Document / Discuss in V2
 Style/MultilineBlockChain:
   Enabled: false
 
