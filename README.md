@@ -53,7 +53,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/citize
 
 ## Releasing
 
-1. Make changes and test locally
+1. Run `rubocop` locally, to validate structure of yml files.
 2. Update `lib/citizens-advice/style/version.rb` with appropriate new version number
-3. Create release branch and push changes to github
-4. After review & merge, tag the version on Github so people can reference it as a new package
+3. Create release branch and push changes up to github
+4. After review & merge, tag the version on github so people can reference it as a new package
