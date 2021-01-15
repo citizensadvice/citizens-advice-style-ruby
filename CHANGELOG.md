@@ -2,7 +2,7 @@
 
 ## <sub>v1.1.0</sub>
 
-#### _Nov. 26 2020_
+#### _Jan. 15 2021_
 
 **Updates**:
 * Gem now uses version 1.3 of rubocop
