@@ -1,5 +1,12 @@
 # Citizens Advice Style Ruby
 
+## <sub>main</sub>
+
+#### _Unreleased_
+
+**New features**:
+* Added/Amended `AllCops/Exclude` across both configurations
+
 ## <sub>v1.1.0</sub>
 
 #### _Jan. 15 2021_

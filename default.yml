@@ -4,9 +4,12 @@ AllCops:
   # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
   DisplayStyleGuide: true
-  # Don't lint generated bin/scripts
+  # Don't lint bin/scripts
+  # Don't lint auto-generated files
   Exclude:
-    - 'bin/**/*'
+    - bin/**/*
+    - vendor/**/*
+    - node_modules/**/*
   # Since Rubocop v0.83 - New cops introduced can be auto-enabled / disabled
   # Lets remove the warnings for these
   NewCops: enable

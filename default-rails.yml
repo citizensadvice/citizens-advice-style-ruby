@@ -9,20 +9,20 @@ Rails:
 
 AllCops:
   Exclude:
-    - 'db/schema.rb' # this is a generated file, we don't want to be manually corrected it.
-    - 'node_modules/**/*'
+    # schema.rb is a generated file, we don't want to correct it.
+    # TOFIX: Document / Discuss other 2 file-groups in V2
+    - 'db/schema.rb'
     - '**/*/Brewfile'
+    - 'db/migrate/*'
 
 Metrics/AbcSize:
   Exclude:
-    - 'db/migrate/*'
     - 'features/**/*'
     - 'spec/**/*'
 
 Metrics/BlockLength:
   Exclude:
     - 'config/**/*'
-    - 'db/migrate/*'
     - 'features/factories/*'
     - 'lib/tasks/**/*'
     - '**/*.json.jbuilder'
@@ -34,12 +34,10 @@ Metrics/ClassLength:
 
 Metrics/MethodLength:
   Exclude:
-    - 'db/migrate/*'
     - 'features/**/*'
 
 Layout/LineLength:
   Exclude:
-    - 'db/migrate/*'
     - 'features/**/*'
 
 Lint/ParenthesesAsGroupedExpression:
