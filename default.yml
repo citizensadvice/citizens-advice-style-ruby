@@ -4,15 +4,12 @@ AllCops:
   # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
   DisplayStyleGuide: true
-  # Don't lint bin/scripts
-  # Don't lint auto-generated files
+  # Don't lint bin/scripts - Possibly remove for V2
+  # Don't lint package files
   Exclude:
     - bin/**/*
     - vendor/**/*
     - node_modules/**/*
-  # Since Rubocop v0.83 - New cops introduced can be auto-enabled / disabled
-  # Lets remove the warnings for these
-  NewCops: enable
 
 # More flexible array alignment
 Layout/FirstArrayElementIndentation:
