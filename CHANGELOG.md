@@ -4,18 +4,25 @@
 
 #### _Unreleased_
 
+**Updates**:
+*
+
+## <sub>v1.2.0</sub>
+
+#### _Feb. 4 2021_
+
 **New features**:
 * Added/Amended `AllCops/Exclude` across both configurations
 
 **Updates**:
-* Gem now uses version 1.3 of rubocop
+* Gem now uses v1.7 of rubocop
 
 ## <sub>v1.1.0</sub>
 
 #### _Jan. 15 2021_
 
 **Updates**:
-* Gem now uses version 1.3 of rubocop
+* Gem now uses v1.3 of rubocop
 
 ## <sub>v1.0.0</sub>
 

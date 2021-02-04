@@ -15,6 +15,14 @@ AllCops:
     - '**/*/Brewfile'
     - 'db/migrate/*'
 
+Layout/LineLength:
+  Exclude:
+    - 'features/**/*'
+
+Lint/ParenthesesAsGroupedExpression:
+  Exclude:
+    - 'features/step_definitions/**/*'
+
 Metrics/AbcSize:
   Exclude:
     - 'features/**/*'
@@ -36,24 +44,16 @@ Metrics/MethodLength:
   Exclude:
     - 'features/**/*'
 
-Layout/LineLength:
-  Exclude:
-    - 'features/**/*'
-
-Lint/ParenthesesAsGroupedExpression:
-  Exclude:
-    - 'features/step_definitions/**/*'
-
-Rails/SkipsModelValidations:
-  Exclude:
-    - 'features/**/*'
-    - 'spec/**/*'
-
-Rails/HasManyOrHasOneDependent:
-  Enabled: false
-
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
 # remove_column have. Disable it and write standard, consistent migrations.
 Rails/BulkChangeTable:
   Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Exclude:
+    - 'features/**/*'
+    - 'spec/**/*'
