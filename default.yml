@@ -19,16 +19,8 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
-# 140 character width
-# TOFIX: Remove Exclude in V2
 Layout/LineLength:
   Max: 140
-  Exclude:
-    - 'spec/**/*'
-
-# TOFIX: Remove in V2
-Lint/AmbiguousBlockAssociation:
-  Enabled: false
 
 # Exclude BlockLength from spec tests as this will break all spec tests.
 # It should be added to the rubocop-rspec defaults ideally.
@@ -38,10 +30,6 @@ Metrics/BlockLength:
 
 # Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:
-  Enabled: false
-
-# TOFIX: Remove in V2
-Naming/MemoizedInstanceVariableName:
   Enabled: false
 
 # TOFIX: Document / Discuss in V2
