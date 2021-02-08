@@ -19,6 +19,7 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+# We have a linelength of 140 characters across the codebase/s
 Layout/LineLength:
   Max: 140
 
@@ -35,11 +36,8 @@ Naming/AccessorMethodName:
 # TOFIX: Document / Discuss in V2
 Naming/MethodParameterName:
   AllowedNames:
-    - '_'
     - 'e'
     - 'i'
-    - 'id'
-    - 'to'
 
 # We don't enforce documentation comments on Modules/Classes
 Style/Documentation:
