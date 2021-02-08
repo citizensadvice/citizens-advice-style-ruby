@@ -49,11 +49,6 @@ Style/Documentation:
 Style/FormatStringToken:
   EnforcedStyle: template
 
-# Disable multi-line chaining check
-# TOFIX: Document / Discuss in V2
-Style/MultilineBlockChain:
-  Enabled: false
-
 # Prefer Double quotes in Ruby across the codebase/s
 Style/StringLiterals:
   EnforcedStyle: double_quotes
