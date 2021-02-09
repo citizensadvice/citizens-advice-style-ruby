@@ -1,9 +1,11 @@
 AllCops:
-  # Target Ruby 2.7 only
-  TargetRubyVersion: 2.7
   # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
   DisplayStyleGuide: true
+  # Enable all NewCops by default (Even new 1.x cops)
+  NewCops: enable
+  # Target Ruby 2.7 only
+  TargetRubyVersion: 2.7
   # Don't lint bin/scripts - Possibly remove for V2
   # Don't lint package files
   Exclude:
@@ -19,16 +21,9 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
-# 140 character width
-# TOFIX: Remove Exclude in V2
+# We have a linelength of 140 characters across the codebase/s
 Layout/LineLength:
   Max: 140
-  Exclude:
-    - 'spec/**/*'
-
-# TOFIX: Remove in V2
-Lint/AmbiguousBlockAssociation:
-  Enabled: false
 
 # Exclude BlockLength from spec tests as this will break all spec tests.
 # It should be added to the rubocop-rspec defaults ideally.
@@ -40,18 +35,11 @@ Metrics/BlockLength:
 Naming/AccessorMethodName:
   Enabled: false
 
-# TOFIX: Remove in V2
-Naming/MemoizedInstanceVariableName:
-  Enabled: false
-
 # TOFIX: Document / Discuss in V2
 Naming/MethodParameterName:
   AllowedNames:
-    - '_'
     - 'e'
     - 'i'
-    - 'id'
-    - 'to'
 
 # We don't enforce documentation comments on Modules/Classes
 Style/Documentation:
@@ -60,11 +48,6 @@ Style/Documentation:
 # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
 Style/FormatStringToken:
   EnforcedStyle: template
-
-# Disable multi-line chaining check
-# TOFIX: Document / Discuss in V2
-Style/MultilineBlockChain:
-  Enabled: false
 
 # Prefer Double quotes in Ruby across the codebase/s
 Style/StringLiterals:
