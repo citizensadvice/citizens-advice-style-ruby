@@ -4,8 +4,16 @@
 
 #### _Unreleased_
 
-**Updates**:
-*
+**Breaking changes**:
+* Removed all V2 (TOFIX), cops.
+  * `Metrics/LineLength` is now set to 140, with no exceptions
+  * `Lint/AmbiguousBlockAssociation` is now enabled
+  * `Naming/MemoizedInstanceVariableName` is now enabled
+  * `Naming/MethodParameterName` has had the redundant ignores removed
+  * `Style/MultilineBlockChain` is now enabled
+
+**Fixes**:
+* Re-added in `NewCops: enabled` as this is used in rubocop 1.x as well
 
 ## <sub>v1.2.0</sub>
 
