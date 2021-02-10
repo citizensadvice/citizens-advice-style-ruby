@@ -23,11 +23,6 @@ Lint/ParenthesesAsGroupedExpression:
   Exclude:
     - 'features/step_definitions/**/*'
 
-Metrics/AbcSize:
-  Exclude:
-    - 'features/**/*'
-    - 'spec/**/*'
-
 Metrics/BlockLength:
   Exclude:
     - 'config/**/*'
@@ -39,10 +34,6 @@ Metrics/ClassLength:
   Exclude:
     - 'features/**/*'
     - 'spec/**/*'
-
-Metrics/MethodLength:
-  Exclude:
-    - 'features/**/*'
 
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
