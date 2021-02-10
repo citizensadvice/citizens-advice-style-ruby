@@ -15,10 +15,6 @@ AllCops:
     - '**/*/Brewfile'
     - 'db/migrate/*'
 
-Layout/LineLength:
-  Exclude:
-    - 'features/**/*'
-
 Lint/ParenthesesAsGroupedExpression:
   Exclude:
     - 'features/step_definitions/**/*'

@@ -22,6 +22,10 @@ Layout/FirstHashElementIndentation:
 # We have a linelength of 140 characters across the codebase/s
 Layout/LineLength:
   Max: 140
+  Exclude:
+    - '^Given'
+    - '^When'
+    - '^Then'
 
 # Exclude BlockLength from spec tests as this will break all spec tests.
 # It should be added to the rubocop-rspec defaults ideally.
