@@ -6,10 +6,8 @@ AllCops:
   NewCops: enable
   # Target Ruby 2.7 only
   TargetRubyVersion: 2.7
-  # Don't lint bin/scripts - Possibly remove for V2
   # Don't lint package files
   Exclude:
-    - bin/**/*
     - vendor/**/*
     - node_modules/**/*
 
@@ -24,6 +22,10 @@ Layout/FirstHashElementIndentation:
 # We have a linelength of 140 characters across the codebase/s
 Layout/LineLength:
   Max: 140
+  Exclude:
+    - '^Given'
+    - '^When'
+    - '^Then'
 
 # Exclude BlockLength from spec tests as this will break all spec tests.
 # It should be added to the rubocop-rspec defaults ideally.
@@ -34,12 +36,6 @@ Metrics/BlockLength:
 # Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:
   Enabled: false
-
-# TOFIX: Document / Discuss in V2
-Naming/MethodParameterName:
-  AllowedNames:
-    - 'e'
-    - 'i'
 
 # We don't enforce documentation comments on Modules/Classes
 Style/Documentation:
