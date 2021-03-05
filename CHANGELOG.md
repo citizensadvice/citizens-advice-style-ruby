@@ -4,6 +4,17 @@
 
 #### _Unreleased_
 
+## <sub>v2.1.0</sub>
+
+#### _Mar. 6 2021_
+
+**Updates**:
+* Gem now uses v1.11 of rubocop
+
+## <sub>v2.0.0</sub>
+
+#### _Feb. 23 2021_
+
 **Breaking changes**:
 * Removed all V2 (TOFIX), cops.
   * `Metrics/LineLength` is now set to 140, with no exceptions
