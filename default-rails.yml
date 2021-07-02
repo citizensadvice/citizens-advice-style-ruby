@@ -19,10 +19,12 @@ AllCops:
 # If they're only specific to 1 repo it probably should be localised there
 Metrics/BlockLength:
   Exclude:
-    - 'config/**/*'
-    - 'features/factories/*'
+    # Routes / Application are massive declarative blocks that run the application
+    - 'config/routes.rb'
+    - 'config/application.rb'
+    # RakeTasks defined here are massive declarative blocks
     - 'lib/tasks/**/*'
-    - '**/*.json.jbuilder'
+    - 'Rakefile'
 
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
