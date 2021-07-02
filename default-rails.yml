@@ -15,11 +15,6 @@ AllCops:
     - '**/*/Brewfile'
     - 'db/migrate/*'
 
-# To remove in v3 - Standard Code styling
-Lint/ParenthesesAsGroupedExpression:
-  Exclude:
-    - 'features/step_definitions/**/*'
-
 # To discuss in v3 - These feel like very specific overrides
 # If they're only specific to 1 repo it probably should be localised there
 Metrics/BlockLength:
@@ -28,12 +23,6 @@ Metrics/BlockLength:
     - 'features/factories/*'
     - 'lib/tasks/**/*'
     - '**/*.json.jbuilder'
-
-# To remove in v3 - Standard Code styling
-Metrics/ClassLength:
-  Exclude:
-    - 'features/**/*'
-    - 'spec/**/*'
 
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
