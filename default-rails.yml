@@ -33,9 +33,3 @@ Rails/BulkChangeTable:
 # To remove/document in v3
 Rails/HasManyOrHasOneDependent:
   Enabled: false
-
-# To remove/document in v3
-Rails/SkipsModelValidations:
-  Exclude:
-    - 'features/**/*'
-    - 'spec/**/*'
