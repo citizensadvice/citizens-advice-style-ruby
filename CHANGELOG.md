@@ -14,7 +14,7 @@
 * Some of `Metrics/BlockLength` overrides which were flagged as rails based are now moved into the core `default.yml`
 
 **Updates**:
-* Gem now uses v1.11 of rubocop
+* Gem now uses v1.18 of rubocop
 
 ## <sub>v2.1.0</sub>
 
