@@ -27,10 +27,12 @@ Layout/LineLength:
     - '^When'
     - '^Then'
 
-# Exclude BlockLength from spec tests as this will break all spec tests.
-# It should be added to the rubocop-rspec defaults ideally.
 Metrics/BlockLength:
   Exclude:
+    # RakeTasks defined here are massive declarative blocks
+    - lib/tasks/**/*
+    - Rakefile
+    # Specs deliberately will almost always break this cop (It should be added to rubocop-rspec defaults ideally)
     - spec/**/*
 
 # Allow method names starting with get or set, as we use some DSL's

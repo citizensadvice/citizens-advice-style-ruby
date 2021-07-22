@@ -4,9 +4,6 @@ inherit_mode:
   merge:
     - Exclude
 
-Rails:
-  Enabled: true
-
 AllCops:
   Exclude:
     # schema.rb is a generated file, we don't want to correct it.
@@ -20,9 +17,9 @@ Metrics/BlockLength:
     # Routes / Application are massive declarative blocks that run the application
     - config/routes.rb
     - config/application.rb
-    # RakeTasks defined here are massive declarative blocks
-    - lib/tasks/**/*
-    - Rakefile
+
+Rails:
+  Enabled: true
 
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
