@@ -31,7 +31,7 @@ Layout/LineLength:
 # It should be added to the rubocop-rspec defaults ideally.
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*'
+    - spec/**/*
 
 # Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:

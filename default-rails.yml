@@ -10,21 +10,19 @@ Rails:
 AllCops:
   Exclude:
     # schema.rb is a generated file, we don't want to correct it.
-    # TOFIX: Document / Discuss other 2 file-groups in V3
-    - 'db/schema.rb'
+    - db/schema.rb
+    # TOFIX: Document / Discuss other 2 file-groups in V4
     - '**/*/Brewfile'
-    - 'db/migrate/*'
+    - db/migrate/*
 
-# To discuss in v3 - These feel like very specific overrides
-# If they're only specific to 1 repo it probably should be localised there
 Metrics/BlockLength:
   Exclude:
     # Routes / Application are massive declarative blocks that run the application
-    - 'config/routes.rb'
-    - 'config/application.rb'
+    - config/routes.rb
+    - config/application.rb
     # RakeTasks defined here are massive declarative blocks
-    - 'lib/tasks/**/*'
-    - 'Rakefile'
+    - lib/tasks/**/*
+    - Rakefile
 
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
@@ -32,6 +30,6 @@ Metrics/BlockLength:
 Rails/BulkChangeTable:
   Enabled: false
 
-# To remove/document in v3
+# We should think about the model more; specifically what should happen when stuff gets deleted.
 Rails/HasManyOrHasOneDependent:
   Enabled: false
