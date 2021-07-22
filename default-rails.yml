@@ -4,36 +4,22 @@ inherit_mode:
   merge:
     - Exclude
 
-Rails:
-  Enabled: true
-
 AllCops:
   Exclude:
     # schema.rb is a generated file, we don't want to correct it.
-    # TOFIX: Document / Discuss other 2 file-groups in V3
-    - 'db/schema.rb'
+    - db/schema.rb
+    # TOFIX: Document / Discuss other 2 file-groups in V4
     - '**/*/Brewfile'
-    - 'db/migrate/*'
+    - db/migrate/*
 
-# To remove in v3 - Standard Code styling
-Lint/ParenthesesAsGroupedExpression:
-  Exclude:
-    - 'features/step_definitions/**/*'
-
-# To discuss in v3 - These feel like very specific overrides
-# If they're only specific to 1 repo it probably should be localised there
 Metrics/BlockLength:
   Exclude:
-    - 'config/**/*'
-    - 'features/factories/*'
-    - 'lib/tasks/**/*'
-    - '**/*.json.jbuilder'
+    # Routes / Application are massive declarative blocks that run the application
+    - config/routes.rb
+    - config/application.rb
 
-# To remove in v3 - Standard Code styling
-Metrics/ClassLength:
-  Exclude:
-    - 'features/**/*'
-    - 'spec/**/*'
+Rails:
+  Enabled: true
 
 # Migrations using `change_table` with `bulk: true` can improve some db platform migration performance
 # but it also introduces some other issues as it does not support all features that add_column,
@@ -41,12 +27,6 @@ Metrics/ClassLength:
 Rails/BulkChangeTable:
   Enabled: false
 
-# To remove/document in v3
+# We should think about the model more; specifically what should happen when stuff gets deleted.
 Rails/HasManyOrHasOneDependent:
   Enabled: false
-
-# To remove/document in v3
-Rails/SkipsModelValidations:
-  Exclude:
-    - 'features/**/*'
-    - 'spec/**/*'
