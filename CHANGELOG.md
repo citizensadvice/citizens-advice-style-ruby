@@ -1,8 +1,20 @@
 # Citizens Advice Style Ruby
 
-## <sub>main</sub>
+## <sub>v3.0.0</sub>
 
 #### _Unreleased_
+
+**Breaking changes**:
+* Removed all testing based ignores
+  * `Lint/ParenthesesAsGroupedExpression` is no longer ignored
+  * `Metrics/ClassLength` is no longer ignored
+  * `Metrics/BlockLength` has been removed from being ignored in test locations (But is still overridden a few times)
+  * `Rails/SkipsModelValidations` is no longer ignored
+
+* Some of `Metrics/BlockLength` overrides which were flagged as rails based are now moved into the core `default.yml`
+
+**Updates**:
+* Gem now uses v1.18 of rubocop
 
 ## <sub>v2.1.0</sub>
 
