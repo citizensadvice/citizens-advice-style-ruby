@@ -1,8 +1,15 @@
 # Citizens Advice Style Ruby
 
+## <sub>v3.0.1</sub>
+
+#### _Aug. 12 2021_
+
+**Fixes**
+* Moved the merge exclude rule from rails config to default config
+
 ## <sub>v3.0.0</sub>
 
-#### _Unreleased_
+#### _Jul. 26 2021_
 
 **Breaking changes**:
 * Removed all testing based ignores

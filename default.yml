@@ -1,3 +1,8 @@
+# This allows us to merge arrays for Exclude rules on AllCops or a specific cop
+inherit_mode:
+  merge:
+    - Exclude
+
 AllCops:
   # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
