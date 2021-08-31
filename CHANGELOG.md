@@ -1,5 +1,14 @@
 # Citizens Advice Style Ruby
 
+## <sub>main</sub>
+
+#### _Unreleased_
+
+**Fixes**
+* Removed the need for git when determining files included in gem
+
+## <sub>v3.0.0</sub>
+
 ## <sub>v3.0.1</sub>
 
 #### _Aug. 12 2021_
