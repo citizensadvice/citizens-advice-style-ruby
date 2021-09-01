@@ -4,9 +4,6 @@ AllCops:
   Exclude:
     # schema.rb is a generated file, we don't want to correct it.
     - db/schema.rb
-    # TOFIX: Document / Discuss other 2 file-groups in V4
-    - '**/*/Brewfile'
-    - db/migrate/*
 
 Metrics/BlockLength:
   Exclude:
