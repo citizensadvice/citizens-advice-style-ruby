@@ -4,6 +4,11 @@
 
 #### _Unreleased_
 
+**Breaking changes**:
+* Removed final undocumented exclusions from `default-rails.yml`
+  * Brewfile's shouldn't be monitored in this gem
+  * Rails migration's should conform to standard linting
+
 **Fixes**
 * Removed the need for git when determining files included in gem
 
