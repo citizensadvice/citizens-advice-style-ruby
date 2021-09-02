@@ -1,6 +1,6 @@
 # citizens-advice-style-ruby
 
-Citizens Advice shared Ruby style rubocop settings.
+Citizens Advice shared Ruby/Rails style rubocop settings.
 
 ## Installation
 
@@ -12,7 +12,8 @@ group :test, :development do
 end
 ```
 
-If you need rubocop-rails styling configuration then also add rubocop-rails gem (TODO: Can we include this in citizens-advice-style?).
+If you want Citizens Advice rails styling then also add the rubocop-rails gem to your Gemfile
+(TODO: Can we include this in citizens-advice-style?).
 
 ```ruby
 group :test, :development do
@@ -21,11 +22,11 @@ group :test, :development do
 end
 ```
 
-And then execute:
+And then run
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself as
 
     $ gem install citizens-advice-style
 
@@ -36,20 +37,19 @@ Create `.rubocop.yml` file with the following configuration:
 ```
 inherit_gem:
   citizens-advice-style:
-    - default.yml
+    - default.yml # For Citizens Advice ruby styles
+    - default-rails.yml # For Citizens Advice rails styles
 ```
-
-If you need rubocop-rails styling configuration then also include `default-rails.yml` after `default.yml`.
 
 Now run
 
     $ bundle exec rubocop
 
-Override any global styles in your local `.rubocop.yml` file.
+Override any styles you want in your local `.rubocop.yml` file.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/citizensadvice/citizens-advice-style-ruby.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/citizensadvice/citizens-advice-style-ruby)
 
 ## Releasing
 
