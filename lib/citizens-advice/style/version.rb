@@ -2,6 +2,6 @@
 
 module CitizensAdvice
   module Style
-    VERSION = "3.0.1"
+    VERSION = "4.0.0"
   end
 end
