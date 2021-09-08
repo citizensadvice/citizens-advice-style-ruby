@@ -12,6 +12,9 @@
 **Fixes**
 * Removed the need for git when determining files included in gem
 
+**Updates**:
+* Gem now uses v1.20 of rubocop
+
 ## <sub>v3.0.1</sub>
 
 #### _Aug. 12 2021_
