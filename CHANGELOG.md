@@ -4,6 +4,10 @@
 
 #### _Unreleased_
 
+## <sub>v4.0.0</sub>
+
+#### _Unreleased_
+
 **Breaking changes**:
 * Removed final undocumented exclusions from `default-rails.yml`
   * Brewfile's shouldn't be monitored in this gem
