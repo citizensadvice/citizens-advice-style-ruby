@@ -49,11 +49,12 @@ Override any styles you want in your local `.rubocop.yml` file.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/citizensadvice/citizens-advice-style-ruby)
+Bug reports and pull requests are welcome on
+[GitHub](https://github.com/citizensadvice/citizens-advice-style-ruby)
 
 ## Releasing
 
-1. Run `rubocop` locally, to validate structure of yml files.
+1. Run `bundle exec rubocop` locally, to validate structure of yml files.
 2. Update `lib/citizens-advice/style/version.rb` with appropriate new version number
 3. Create release branch and push changes up to github
 4. After review & merge, tag the version on github so people can reference it as a new package
