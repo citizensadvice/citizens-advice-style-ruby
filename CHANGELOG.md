@@ -4,9 +4,16 @@
 
 #### _Unreleased_
 
-## <sub>v4.0.0</sub>
+## <sub>v4.1.0</sub>
 
 #### _Unreleased_
+
+**Updates**:
+* Gem now uses v1.21 of rubocop
+
+## <sub>v4.0.0</sub>
+
+#### _Sep. 14 2021_
 
 **Breaking changes**:
 * Removed final undocumented exclusions from `default-rails.yml`
