@@ -1,19 +1,30 @@
 # Citizens Advice Style Ruby
 
-## <sub>main</sub>
+## v5.0.0
 
-#### _Unreleased_
+_Dec. 13 2021_
 
-## <sub>v4.1.0</sub>
+**Updates**:
 
-#### _Unreleased_
+* Gem now uses v1.23 of rubocop
+* (Re)Enabled Rails/HasManyOrHasOneDependent
+* Additional exclusions for Rails migrations
+ 
+**Breaking changes**:
+
+* Requires Ruby 3.0.3
+* Includes rubocop-rspec by default
+
+## v4.1.0
+
+_Sep. 23 2021_
 
 **Updates**:
 * Gem now uses v1.21 of rubocop
 
-## <sub>v4.0.0</sub>
+## v4.0.0
 
-#### _Sep. 14 2021_
+_Sep. 14 2021_
 
 **Breaking changes**:
 * Removed final undocumented exclusions from `default-rails.yml`
@@ -26,16 +37,16 @@
 **Updates**:
 * Gem now uses v1.20 of rubocop
 
-## <sub>v3.0.1</sub>
+## v3.0.1
 
-#### _Aug. 12 2021_
+_Aug. 12 2021_
 
 **Fixes**
 * Moved the merge exclude rule from rails config to default config
 
-## <sub>v3.0.0</sub>
+## v3.0.0
 
-#### _Jul. 26 2021_
+_Jul. 26 2021_
 
 **Breaking changes**:
 * Removed all testing based ignores
@@ -49,16 +60,16 @@
 **Updates**:
 * Gem now uses v1.18 of rubocop
 
-## <sub>v2.1.0</sub>
+## v2.1.0
 
-#### _Mar. 6 2021_
+_Mar. 6 2021_
 
 **Updates**:
 * Gem now uses v1.11 of rubocop
 
-## <sub>v2.0.0</sub>
+## v2.0.0
 
-#### _Feb. 23 2021_
+_Feb. 23 2021_
 
 **Breaking changes**:
 * Removed all V2 (TOFIX), cops.
@@ -71,9 +82,9 @@
 **Fixes**:
 * Re-added in `NewCops: enabled` as this is used in rubocop 1.x as well
 
-## <sub>v1.2.0</sub>
+## v1.2.0
 
-#### _Feb. 4 2021_
+_Feb. 4 2021_
 
 **New features**:
 * Added/Amended `AllCops/Exclude` across both configurations
@@ -81,16 +92,16 @@
 **Updates**:
 * Gem now uses v1.7 of rubocop
 
-## <sub>v1.1.0</sub>
+## v1.1.0
 
-#### _Jan. 15 2021_
+_Jan. 15 2021_
 
 **Updates**:
 * Gem now uses v1.3 of rubocop
 
-## <sub>v1.0.0</sub>
+## v1.0.0
 
-#### _Nov. 26 2020_
+_Nov. 26 2020_
 
 **New features**:
 
