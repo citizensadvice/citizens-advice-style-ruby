@@ -2,7 +2,8 @@ require: rubocop-rails
 
 AllCops:
   Exclude:
-    # schema.rb is a generated file, we don't want to correct it.
+    # bin and schema.rb are generated files, we don't want to correct it.
+    - bin/*
     - db/schema.rb
 
 Metrics/BlockLength:
@@ -10,6 +11,15 @@ Metrics/BlockLength:
     # Routes / Application are massive declarative blocks that run the application
     - config/routes.rb
     - config/application.rb
+    - db/migrate/*
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*
 
 Rails:
   Enabled: true
@@ -20,6 +30,14 @@ Rails:
 Rails/BulkChangeTable:
   Enabled: false
 
-# We should think about the model more; specifically what should happen when stuff gets deleted.
-Rails/HasManyOrHasOneDependent:
-  Enabled: false
+Rails/SquishedSQLHeredocs:
+  Exclude:
+    # This does not work if the sql contains comments
+    - db/migrate/*
+
+Rails/SkipsModelValidations:
+  Exclude:
+    # When writing migrations / tests this is often deliberate
+    - db/migrate/*
+    - spec/**/*
+

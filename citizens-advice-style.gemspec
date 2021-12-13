@@ -7,20 +7,21 @@ require "citizens-advice/style/version"
 Gem::Specification.new do |spec|
   spec.name          = "citizens-advice-style"
   spec.version       = CitizensAdvice::Style::VERSION
-  spec.author        = "Citizens Advice"
-  spec.email         = %w[robert.murray@citizensadvice.org.uk luke.hill@citizensadvice.org.uk]
+  spec.authors       = ["Robert Murray", "Luke Hill", "Daniel Lewis"]
   spec.summary       = "Citizens Advice shared rubocop configuration"
   spec.homepage      = "https://github.com/citizensadvice/citizens-advice-style-ruby"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.7"
+  spec.required_ruby_version = ">=3.0.3"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/citizensadvice/citizens-advice-style-ruby"
   spec.metadata["changelog_uri"] = "https://github.com/citizensadvice/citizens-advice-style-ruby/blob/master/CHANGELOG.md"
+  spec.metadata["rubygems_mfa_required"] = "true"
   spec.files = Dir["lib/**/*", "default.yml", "default-rails.yml", "CHANGELOG.md", "LICENSE", "README.md"]
 
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.21.0"
+  spec.add_dependency "rubocop", "~> 1.23.0"
+  spec.add_dependency "rubocop-rspec", "~> 2.6.0"
 end

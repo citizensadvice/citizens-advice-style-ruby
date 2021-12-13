@@ -3,14 +3,16 @@ inherit_mode:
   merge:
     - Exclude
 
+require:
+  - rubocop-rspec
+
 AllCops:
   # Display all verbose info on failures to help people triage how to fix
   DisplayCopNames: true
   DisplayStyleGuide: true
   # Enable all NewCops by default (Even new 1.x cops)
   NewCops: enable
-  # Target Ruby 2.7 only
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3
   # Don't lint package files
   Exclude:
     - vendor/**/*
