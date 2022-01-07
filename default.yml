@@ -12,7 +12,6 @@ AllCops:
   DisplayStyleGuide: true
   # Enable all NewCops by default (Even new 1.x cops)
   NewCops: enable
-  TargetRubyVersion: 3
   # Don't lint package files
   Exclude:
     - vendor/**/*
