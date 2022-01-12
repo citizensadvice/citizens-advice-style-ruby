@@ -7,12 +7,12 @@ require "citizens-advice/style/version"
 Gem::Specification.new do |spec|
   spec.name          = "citizens-advice-style"
   spec.version       = CitizensAdvice::Style::VERSION
-  spec.authors       = ["Robert Murray", "Luke Hill", "Daniel Lewis"]
+  spec.authors       = ["Robert Murray", "Luke Hill", "Daniel Lewis", "David Rapson"]
   spec.summary       = "Citizens Advice shared rubocop configuration"
   spec.homepage      = "https://github.com/citizensadvice/citizens-advice-style-ruby"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">=3.0.3"
+  spec.required_ruby_version = ">= 2.7"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/citizensadvice/citizens-advice-style-ruby"
@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.23.0"
-  spec.add_dependency "rubocop-rspec", "~> 2.6.0"
+  spec.add_dependency "rubocop", "~> 1.24.1"
+  spec.add_dependency "rubocop-rspec", "~> 2.7.0"
 end
