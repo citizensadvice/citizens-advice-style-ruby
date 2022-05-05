@@ -1,5 +1,14 @@
 # Citizens Advice Style Ruby
 
+## v8.0.0
+
+_May. 5 2022_
+
+**Updates**:
+
+* Gem now uses v1.28 of rubocop
+* Gem now uses v2.10 of rubocop-rspec
+
 ## v7.0.0
 
 _Feb. 25 2022_
