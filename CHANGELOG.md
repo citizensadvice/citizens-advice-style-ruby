@@ -4,6 +4,7 @@
 
 **Updates**:
 
+* Add rubocop-rails as as dependency
 * Count arrays and hashes as one-line when calculating method and class length
 
 ## v9.0.0
