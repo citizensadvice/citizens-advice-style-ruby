@@ -41,6 +41,14 @@ Metrics/BlockLength:
     # Specs deliberately will almost always break this cop (It should be added to rubocop-rspec defaults ideally)
     - spec/**/*
 
+# Count arrays and hashes as one-line when calculating method length
+Metrics/MethodLength:
+  CountAsOne: ['array', 'hash']
+
+# Count arrays and hashes as one-line when calculating class length
+Metrics/ClassLength:
+  CountAsOne: ['array', 'hash']
+
 # Allow method names starting with get or set, as we use some DSL's
 Naming/AccessorMethodName:
   Enabled: false

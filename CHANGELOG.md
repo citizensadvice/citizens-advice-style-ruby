@@ -1,5 +1,11 @@
 # Citizens Advice Style Ruby
 
+## Unreleased
+
+**Updates**:
+
+* Count arrays and hashes as one-line when calculating method and class length
+
 ## v9.0.0
 
 _Jun. 17 2022_
