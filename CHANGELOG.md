@@ -4,7 +4,9 @@
 
 **Updates**:
 
-* Add rubocop-rails as as dependency
+* Gem now uses v1.36 of rubocop
+* Gem now uses v2.13 of rubocop-rspec
+* Add rubocop-rails as as dependency using v2.16
 * Count arrays and hashes as one-line when calculating method and class length
 
 ## v9.0.0
