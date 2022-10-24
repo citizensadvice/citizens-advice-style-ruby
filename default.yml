@@ -38,8 +38,6 @@ Metrics/BlockLength:
     # RakeTasks defined here are massive declarative blocks
     - lib/tasks/**/*
     - Rakefile
-    # Specs deliberately will almost always break this cop (It should be added to rubocop-rspec defaults ideally)
-    - spec/**/*
 
 # Count arrays and hashes as one-line when calculating method length
 Metrics/MethodLength:

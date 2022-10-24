@@ -4,6 +4,7 @@
 
 **Updates**:
 
+* Remove `spec/` exclude for `Metrics/BlockLength` as this is now a default in rubocop-rspec 2.11+
 * Gem now uses v1.36 of rubocop
 * Gem now uses v2.13 of rubocop-rspec
 * Add rubocop-rails as as dependency using v2.16
