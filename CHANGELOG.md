@@ -5,9 +5,9 @@
 **Updates**:
 
 * Remove `spec/` exclude for `Metrics/BlockLength` as this is now a default in rubocop-rspec 2.11+
-* Gem now uses v1.36 of rubocop
-* Gem now uses v2.13 of rubocop-rspec
-* Add rubocop-rails as as dependency using v2.16
+* Gem now requires version `~> 1.43` of rubocop
+* Gem now requires version `~> 2.13` of rubocop-rspec
+* Add rubocop-rails as as dependency using `~> 2.16`
 * Count arrays and hashes as one-line when calculating method and class length
 
 ## v9.0.0
