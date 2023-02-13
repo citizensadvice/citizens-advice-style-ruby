@@ -12,8 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/citizensadvice/citizens-advice-style-ruby"
   spec.license       = "MIT"
 
-  # For some reason 3.1.1 is not being recognised
-  spec.required_ruby_version = ">= 2.7" # rubocop:disable Gemspec/RequiredRubyVersion
+  spec.required_ruby_version = ">= 2.7"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/citizensadvice/citizens-advice-style-ruby"
@@ -23,6 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.30.1"
-  spec.add_dependency "rubocop-rspec", "~> 2.11.1"
+  spec.add_dependency "rubocop", "~> 1.45"
+  spec.add_dependency "rubocop-rspec", "~> 2.18"
+  spec.add_dependency "rubocop-rails", "~> 2.17"
 end
