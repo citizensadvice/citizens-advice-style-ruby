@@ -1,5 +1,9 @@
 # Citizens Advice Style Ruby
 
+## v10.0.1
+
+- Now includes the correct version number
+
 ## v10.0.0
 
 **Updates**:
