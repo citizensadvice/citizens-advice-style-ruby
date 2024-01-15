@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/citizensadvice/citizens-advice-style-ruby"
   spec.license       = "MIT"
 
-  spec.required_ruby_version = ">= 2.7"
+  spec.required_ruby_version = ">= 3.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/citizensadvice/citizens-advice-style-ruby"
@@ -22,7 +22,8 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.45"
-  spec.add_dependency "rubocop-rspec", "~> 2.18"
-  spec.add_dependency "rubocop-rails", "~> 2.17"
+  spec.add_dependency "rubocop", "~> 1.60"
+  spec.add_dependency "rubocop-performance", "~> 1.20"
+  spec.add_dependency "rubocop-rails", "~> 2.23"
+  spec.add_dependency "rubocop-rspec", "~> 2.26"
 end
