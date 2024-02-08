@@ -18,6 +18,10 @@ AllCops:
     - vendor/**/*
     - node_modules/**/*
 
+# Links and buttons should not be considered interchangeable
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: false
+
 # More flexible array alignment
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
