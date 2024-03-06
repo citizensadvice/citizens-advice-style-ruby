@@ -3,7 +3,7 @@
 ## v11.0.0
 
 - Include rubocop-performance
-- Drop ruby 2.7 support
+- Drop ruby 2.7, and 3.0 support
 - Bump dependency versions to latest
 
 ## v10.0.1

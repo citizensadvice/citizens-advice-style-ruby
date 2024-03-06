@@ -2,4 +2,4 @@ inherit_from: default.yml
 
 AllCops:
   # Match minimum target version to gemspec
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.1.4
