@@ -5,6 +5,7 @@ inherit_mode:
 
 require:
   - rubocop-rspec
+  - rubocop-performance
 
 AllCops:
   # Display all verbose info on failures to help people triage how to fix
@@ -16,6 +17,10 @@ AllCops:
   Exclude:
     - vendor/**/*
     - node_modules/**/*
+
+# Links and buttons should not be considered interchangeable
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: false
 
 # More flexible array alignment
 Layout/FirstArrayElementIndentation:
