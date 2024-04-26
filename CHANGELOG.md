@@ -1,5 +1,9 @@
 # Citizens Advice Style Ruby
 
+## Unreleased
+
+- Gem now explicitly requires version `~> 2.19` of rubocop-capybara
+
 ## v11.0.0
 
 - Include rubocop-performance
