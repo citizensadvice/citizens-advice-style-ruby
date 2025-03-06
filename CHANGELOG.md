@@ -5,7 +5,8 @@
 - Minimum ruby support is now 3.2.3
 - Update all cops to the latest version
 - Update to [plugin extension](https://docs.rubocop.org/rubocop/plugin_migration_guide.html) system
-- Add rubocop-rails_rspec to the rails section
+- Add `rubocop-rails_rspec` to the rails section
+- Add `rubocop-factory_bot` to the rails section
 
 ## v11.0.0
 
