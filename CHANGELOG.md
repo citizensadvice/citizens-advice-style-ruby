@@ -1,8 +1,11 @@
 # Citizens Advice Style Ruby
 
-## Unreleased
+## v12.0.0
 
-- Gem now explicitly requires version `~> 2.19` of rubocop-capybara
+- Minimum ruby support is now 3.2.3
+- Update all cops to the latest version
+- Update to [plugin extension](https://docs.rubocop.org/rubocop/plugin_migration_guide.html) system
+- Add rubocop-rails_rspec to the rails section
 
 ## v11.0.0
 
