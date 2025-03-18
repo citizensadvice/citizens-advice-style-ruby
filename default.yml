@@ -3,7 +3,7 @@ inherit_mode:
   merge:
     - Exclude
 
-require:
+plugins:
   - rubocop-capybara
   - rubocop-rspec
   - rubocop-performance
