@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    citizens-advice-style (12.0.0)
+    citizens-advice-style (12.1.0)
       rubocop (~> 1.73)
       rubocop-capybara (~> 2.22)
       rubocop-factory_bot (~> 2.27)
@@ -252,6 +252,9 @@ GEM
     unicode-emoji (4.0.4)
     uri (1.0.3)
     useragent (0.16.11)
+    view_component (4.0.2)
+      activesupport (>= 7.1.0, < 8.1)
+      concurrent-ruby (~> 1)
     websocket-driver (0.8.0)
       base64
       websocket-extensions (>= 0.1.0)
@@ -271,6 +274,7 @@ PLATFORMS
 DEPENDENCIES
   citizens-advice-style!
   rails (~> 8.0.2)
+  view_component
 
 BUNDLED WITH
    2.7.1

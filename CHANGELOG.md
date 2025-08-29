@@ -1,5 +1,9 @@
 # Citizens Advice Style Ruby
 
+## v12.1.0
+
+- Disable `Lint/MissingSuper` for view components in `app/components`
+
 ## v12.0.0
 
 - Minimum ruby support is now 3.2.3

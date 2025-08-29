@@ -9,6 +9,11 @@ AllCops:
     - bin/*
     - db/schema.rb
 
+Lint/MissingSuper:
+  Exclude:
+    # Calls to super in subclasses of ViewComponent::Base aren't expected
+    - 'app/components/**/*'
+
 Metrics/BlockLength:
   Exclude:
     # Routes / Application are massive declarative blocks that run the application
