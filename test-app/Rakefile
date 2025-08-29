@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require_relative "config/application"
+
+if Rails.env.local?
+  require "rubocop/rake_task"
+  RuboCop::RakeTask.new
+end
+
+Rails.application.load_tasks
+
+task lint: %i[rubocop]
+
+task default: %i[lint]

@@ -1,0 +1,21 @@
+name: Continuous integration
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: test-app
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: '3.4.2'
+          working-directory: test-app
+      - run: bundle exec rubocop --format progress --format github
