@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # Rails
-gem "rails", "~> 8.0.2"
+gem "rails", "~> 8.0.3"
 
 # Add view_component to allow testing rules for it
 gem "view_component"
